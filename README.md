@@ -1,1 +1,0 @@
-# ryland-chem.github.io
