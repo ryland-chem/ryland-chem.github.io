@@ -32,6 +32,8 @@
         }
       </style>
     </noscript>
+
+
   </head>
   <body class="bg-light" id="top">
     <header class="d-print-none">
@@ -121,16 +123,18 @@
 </div></div>
     </div>
 	
-    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-      <div class="container">
-        <div class="my-3">
-          <div class="h4">Ryland T. Giebelhaus, PhD (2025)</div>
-          <div class="footer-nav">
-            <nav role="navigation">
-            </nav>
-          </div>
-        </div>
-        <div class="text-small">
+<footer class="pt-4 pb-4 text-muted text-center d-print-none">
+  <div class="container">
+    <div class="my-3">
+      <div class="h4">
+        Ryland T. Giebelhaus, PhD (<span id="current-year"></span>)
+      </div>
+      <div class="footer-nav">
+        <nav role="navigation">
+        </nav>
+      </div>
+    </div>
+    <div class="text-small">
   
         </div>
       </div>
@@ -138,5 +142,9 @@
     <script src="scripts/mdb.min.js?ver=1.2.1"></script>
     <script src="scripts/aos.js?ver=1.2.1"></script>
     <script src="scripts/main.js?ver=1.2.1"></script>
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+
   </body>
 </html>
