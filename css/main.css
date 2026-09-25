@@ -168,3 +168,23 @@ footer a:not(.nav-link) {
   .page-break {
     padding-top: 5rem;
     page-break-before: always; } }
+
+    .group-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cover.bg-image {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.cover.bg-image > img.group-photo {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  position: static !important;
+  transform: none !important;
+}
